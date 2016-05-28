@@ -4,40 +4,40 @@ Autocomplete component for ractive.js
 
 ## Install
 
-	npm install ractive-autocomplete
+    npm install ractive-autocomplete
 
 ## Usage
 
 ```html
 <autocomplete
-	text="{{selection.name}}"
-	value="{{selection.id}}"
-	placeholder="Full name"
-	displayMember="name"
-	valueMember="id"
-	delay="200"
-	autoselect="true"
-	suggest="{{searchUsers}}"/>
+    text="{{selection.name}}"
+    value="{{selection.id}}"
+    placeholder="Full name"
+    displayMember="name"
+    valueMember="id"
+    delay="200"
+    autoselect="true"
+    suggest="{{searchUsers}}"/>
 ```
 
 ```javascript
-	var AutoComplete = require("ractive-autocomplete");
-	Ractive.components.autocomplete = AutoComplete;
-	
-	var ractive = new Ractive({
-		el: document.querySelector("#container"),
-		template: "..."
-		data: function() {
-			return {
-				selection: { name: "bart", id: 1 },
-				searchUsers: function(text, callback) {
-					var error = null;
-					var results = [{ name: "bart", id: 1 }, { name: "bart2", id: 2 }];
-					callback(error, results);
-				}
-			};
-		}
-	});
+var AutoComplete = require("ractive-autocomplete");
+Ractive.components.autocomplete = AutoComplete;
+
+var ractive = new Ractive({
+    el: document.querySelector("#container"),
+    template: "..."
+    data: function() {
+        return {
+            selection: { name: "bart", id: 1 },
+            searchUsers: function(text, callback) {
+                var error = null;
+                var results = [{ name: "bart", id: 1 }, { name: "bart2", id: 2 }];
+                callback(error, results);
+            }
+        };
+    }
+});
 ```
 
 ## Parameters
