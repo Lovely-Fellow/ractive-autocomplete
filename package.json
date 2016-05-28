@@ -1,7 +1,8 @@
 {
   "name": "ractive-autocomplete",
   "version": "1.0.0",
-  "description": "",
+  "description": "Autocomplete input for ractive.js",
+  "keywords": ["ractive", "ractive.js", "autocomplete", "select", "suggest", "complete"],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
