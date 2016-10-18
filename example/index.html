@@ -48,16 +48,14 @@
 			    <autocomplete
 					placeholder="placeholder" 
 					suggest="{{suggest}}"
-					displayMember="name" 
-					valueMember="id"
+					displayMember="name"
 					autoselect="true"
-					text="{{selection.name}}"
-					value="{{selection.id}}"/>
+					value="{{selection}}"/>
 					
 				<br>
 				<div><input readonly="readonly" value="{{selection.name}}">: {{selection.id}}</div>
 		</script>
 		<div id="container"></div>
-		<script type="text/javascript" src="/app.js"></script>
+		<script type="text/javascript" src="./app.js"></script>
 	</body>
 </html>

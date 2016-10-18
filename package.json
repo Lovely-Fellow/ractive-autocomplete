@@ -1,6 +1,6 @@
 {
   "name": "ractive-autocomplete",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Autocomplete input for ractive.js",
   "keywords": ["ractive", "ractive.js", "autocomplete", "select", "suggest", "complete"],
   "main": "index.js",
